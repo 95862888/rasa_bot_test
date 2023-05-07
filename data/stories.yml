@@ -1,0 +1,180 @@
+version: "3.1"
+
+stories:
+  - story: cancel and appoint pre registration
+    steps:
+      - intent: cancel_and_appoint_pre_registration
+      - action: action_get_confidence
+      - action: utter_cancel_pre_registration
+      - action: utter_pre_registration
+
+#  - story: Answer to appeal_result
+#    steps:
+#      - intent: appeal_result
+#      - action: utter_appeal_result
+#
+#  - story: Answer to call_employees_to_home
+#    steps:
+#      - intent: call_employees_to_home
+#      - action: utter_call_employees_to_home
+
+  - story: Answer to call_employees_to_home
+    steps:
+      - intent: call_employees_to_home
+      - action: action_get_confidence
+      - action: utter_call_employees_to_home
+
+  - story: Answer to preferential_categories
+    steps:
+      - intent: preferential_categories
+      - action: action_get_confidence
+      - action: utter_preferential_categories
+
+  - story: Call employee to home, ask for prefentials
+    steps:
+      - intent: call_employees_to_home
+      - action: action_get_confidence
+      - action: utter_call_employees_to_home
+      - intent: preferential_categories
+      - action: action_get_confidence
+      - action: utter_prefential_categories_calling_employee_home
+
+#  - story: Answer to cancel_pre_registration
+#    steps:
+#      - intent: cancel_pre_registration
+#      - action: utter_cancel_pre_registration
+#
+#  - story: Answer to document_storage_time
+#    steps:
+#      - intent: document_storage_time
+#      - action: utter_document_storage_time
+#
+#  - story: Answer to get_a_receipt_again
+#    steps:
+#      - intent: get_a_receipt_again
+#      - action: utter_get_a_receipt_again
+#
+#  - story: Answer to get_job
+#    steps:
+#      - intent: get_job
+#      - action: utter_get_job
+#
+#  - story: Answer to head_personal_reception
+#    steps:
+#      - intent: head_personal_reception
+#      - action: utter_head_personal_reception
+#
+#  - story: Answer to number_of_request
+#    steps:
+#      - intent: number_of_request
+#      - action: utter_number_of_request
+#
+#  - story: Answer to number_of_services_per_ticket
+#    steps:
+#      - intent: number_of_services_per_ticket
+#      - action: utter_number_of_services_per_ticket
+#
+#  - story: Answer to office_for_disabled_peoples
+#    steps:
+#      - intent: office_for_disabled_peoples
+#      - action: utter_office_for_disabled_peoples
+#
+#  - story: Answer to office_hours
+#    steps:
+#      - intent: office_hours
+#      - action: utter_office_hours
+#
+#  - story: Answer to office_phone_number
+#    steps:
+#      - intent: office_phone_number
+#      - action: utter_office_phone_number
+#
+#  - story: Answer to office_workload
+#    steps:
+#      - intent: office_workload
+#      - action: utter_office_workload
+#
+#  - story: Answer to pre_registration
+#    steps:
+#      - intent: pre_registration
+#      - action: utter_pre_registration
+#
+#  - story: Answer to pre_registration_number
+#    steps:
+#      - intent: pre_registration_number
+#      - action: utter_pre_registration_number
+#
+#  - story: Answer to prefential_categories_calling_employee_home
+#    steps:
+#      - intent: prefential_categories_calling_employee_home
+#      - action: utter_prefential_categories_calling_employee_home
+#
+#  - story: Answer to preferential_categories
+#    steps:
+#      - intent: preferential_categories
+#      - action: utter_preferential_categories
+#
+#  - story: Answer to reschedule_reception_time
+#    steps:
+#      - intent: reschedule_reception_time
+#      - action: utter_reschedule_reception_time
+#
+#  - story: Answer to result_in_another_office
+#    steps:
+#      - intent: result_in_another_office
+#      - action: utter_result_in_another_office
+#
+#  - story: Answer to results_of_service
+#    steps:
+#      - intent: results_of_service
+#      - action: utter_results_of_service
+#
+#  - story: Answer to rosreestr_request_status
+#    steps:
+#      - intent: rosreestr_request_status
+#      - action: utter_rosreestr_request_status
+#
+#  - story: Answer to send_request
+#    steps:
+#      - intent: send_request
+#      - action: utter_send_request
+#
+#  - story: Answer to send_the_result_by_mail
+#    steps:
+#      - intent: send_the_result_by_mail
+#      - action: utter_send_the_result_by_mail
+#
+#  - story: Answer to service_execution_time
+#    steps:
+#      - intent: service_execution_time
+#      - action: utter_service_execution_time
+#
+#  - story: Answer to service_has_expired
+#    steps:
+#      - intent: service_has_expired
+#      - action: utter_service_has_expired
+#
+#  - story: Answer to services_for_business
+#    steps:
+#      - intent: services_for_business
+#      - action: utter_services_for_business
+#
+#  - story: Answer to storage_of_documents
+#    steps:
+#      - intent: storage_of_documents
+#      - action: utter_storage_of_documents
+#
+#  - story: Answer to ticket_issuing_time
+#    steps:
+#      - intent: ticket_issuing_time
+#      - action: utter_ticket_issuing_time
+#
+#  - story: Answer to which_executive_authority_process_my_doc
+#    steps:
+#      - intent: which_executive_authority_process_my_doc
+#      - action: utter_which_executive_authority_process_my_doc
+#
+#  - story: Answer to which_government_agency_provides_service
+#    steps:
+#      - intent: which_government_agency_provides_service
+#      - action: utter_which_government_agency_provides_service

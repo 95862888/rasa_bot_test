@@ -1,0 +1,192 @@
+version: "3.1"
+
+rules:
+  - rule: start dialogue
+    steps:
+      - intent: start_bot
+      - action: utter_start_bot
+
+  - rule: Answer to appeal_result
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default_fallback
+
+  - rule: Answer to appeal_result
+    steps:
+      - intent: appeal_result
+      - action: action_get_confidence
+      - action: utter_appeal_result
+
+#  - rule: Answer to call_employees_to_home
+#    steps:
+#      - intent: call_employees_to_home
+#      - action: action_get_confidence
+#      - action: utter_call_employees_to_home
+
+  - rule: Answer to cancel_pre_registration
+    steps:
+      - intent: cancel_pre_registration
+      - action: action_get_confidence
+      - action: utter_cancel_pre_registration
+
+  - rule: Answer to document_storage_time
+    steps:
+      - intent: document_storage_time
+      - action: action_get_confidence
+      - action: utter_document_storage_time
+
+  - rule: Answer to get_a_receipt_again
+    steps:
+      - intent: get_a_receipt_again
+      - action: action_get_confidence
+      - action: utter_get_a_receipt_again
+
+  - rule: Answer to get_job
+    steps:
+      - intent: get_job
+      - action: action_get_confidence
+      - action: utter_get_job
+
+  - rule: Answer to head_personal_reception
+    steps:
+      - intent: head_personal_reception
+      - action: action_get_confidence
+      - action: utter_head_personal_reception
+
+  - rule: Answer to number_of_request
+    steps:
+      - intent: number_of_request
+      - action: action_get_confidence
+      - action: utter_number_of_request
+
+  - rule: Answer to number_of_services_per_ticket
+    steps:
+      - intent: number_of_services_per_ticket
+      - action: action_get_confidence
+      - action: utter_number_of_services_per_ticket
+
+  - rule: Answer to office_for_disabled_peoples
+    steps:
+      - intent: office_for_disabled_peoples
+      - action: action_get_confidence
+      - action: utter_office_for_disabled_peoples
+
+  - rule: Answer to office_hours
+    steps:
+      - intent: office_hours
+      - action: action_get_confidence
+      - action: utter_office_hours
+
+  - rule: Answer to office_phone_number
+    steps:
+      - intent: office_phone_number
+      - action: action_get_confidence
+      - action: utter_office_phone_number
+
+  - rule: Answer to office_workload
+    steps:
+      - intent: office_workload
+      - action: action_get_confidence
+      - action: utter_office_workload
+
+  - rule: Answer to pre_registration
+    steps:
+      - intent: pre_registration
+      - action: action_get_confidence
+      - action: utter_pre_registration
+
+  - rule: Answer to pre_registration_number
+    steps:
+      - intent: pre_registration_number
+      - action: action_get_confidence
+      - action: utter_pre_registration_number
+
+  - rule: Answer to prefential_categories_calling_employee_home
+    steps:
+      - intent: prefential_categories_calling_employee_home
+      - action: action_get_confidence
+      - action: utter_prefential_categories_calling_employee_home
+
+#  - rule: Answer to preferential_categories
+#    steps:
+#      - intent: preferential_categories
+#      - action: action_get_confidence
+#      - action: utter_preferential_categories
+
+  - rule: Answer to reschedule_reception_time
+    steps:
+      - intent: reschedule_reception_time
+      - action: action_get_confidence
+      - action: utter_reschedule_reception_time
+
+  - rule: Answer to result_in_another_office
+    steps:
+      - intent: result_in_another_office
+      - action: action_get_confidence
+      - action: utter_result_in_another_office
+
+  - rule: Answer to results_of_service
+    steps:
+      - intent: results_of_service
+      - action: action_get_confidence
+      - action: utter_results_of_service
+
+  - rule: Answer to rosreestr_request_status
+    steps:
+      - intent: rosreestr_request_status
+      - action: action_get_confidence
+      - action: utter_rosreestr_request_status
+
+  - rule: Answer to send_request
+    steps:
+      - intent: send_request
+      - action: action_get_confidence
+      - action: utter_send_request
+
+  - rule: Answer to send_the_result_by_mail
+    steps:
+      - intent: send_the_result_by_mail
+      - action: action_get_confidence
+      - action: utter_send_the_result_by_mail
+
+  - rule: Answer to service_execution_time
+    steps:
+      - intent: service_execution_time
+      - action: action_get_confidence
+      - action: utter_service_execution_time
+
+  - rule: Answer to service_has_expired
+    steps:
+      - intent: service_has_expired
+      - action: action_get_confidence
+      - action: utter_service_has_expired
+
+  - rule: Answer to services_for_business
+    steps:
+      - intent: services_for_business
+      - action: action_get_confidence
+      - action: utter_services_for_business
+
+  - rule: Answer to storage_of_documents
+    steps:
+      - intent: storage_of_documents
+      - action: action_get_confidence
+      - action: utter_storage_of_documents
+
+  - rule: Answer to ticket_issuing_time
+    steps:
+      - intent: ticket_issuing_time
+      - action: action_get_confidence
+      - action: utter_ticket_issuing_time
+
+  - rule: Answer to which_executive_authority_process_my_doc
+    steps:
+      - intent: which_executive_authority_process_my_doc
+      - action: action_get_confidence
+      - action: utter_which_executive_authority_process_my_doc
+
+  - rule: Answer to which_government_agency_provides_service
+    steps:
+      - intent: which_government_agency_provides_service
+      - action: action_get_confidence
+      - action: utter_which_government_agency_provides_service

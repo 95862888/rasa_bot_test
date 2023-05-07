@@ -1,0 +1,4 @@
+models/*
+*.swp
+*.swo
+.rasa/*
