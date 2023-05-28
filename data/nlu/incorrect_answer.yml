@@ -1,0 +1,6 @@
+version: '3.1'
+nlu:
+  - intent: incorrect_answer
+    examples: |-
+      - /incorrect_answer
+      - incorrect_answer

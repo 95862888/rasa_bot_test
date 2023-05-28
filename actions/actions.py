@@ -47,7 +47,7 @@ def add_example(filepath: str, new_example: str, intent_name: str = None):
         data = yaml.safe_load(f)
 
     if intent_name is None and len(data['nlu']) != 1:
-       raise Exception(f'File contains more than 1 intent. specify the intent_name parameter')
+        raise Exception(f'File contains more than 1 intent. specify the intent_name parameter')
 
     for item in data['nlu']:
         item['examples'] = [example.strip('\n').strip() for example in item['examples'].split('- ') if example]
@@ -57,7 +57,6 @@ def add_example(filepath: str, new_example: str, intent_name: str = None):
 
     with open(filepath, 'w') as f:
         yaml.dump(data, f, sort_keys=False, default_flow_style=False, Dumper=IndentDumper, allow_unicode=True)
-
 
 
 class ActionGetConfidence(Action):

@@ -8,12 +8,12 @@ stories:
       - action: utter_cancel_pre_registration
       - action: utter_pre_registration
 
-  - story: add example for incorrect intent
-    steps:
-      - intent: incorrect_answer
-      - action: utter_incorrect_answer
-      - intent: correct_answer_number
-      - action: action_add_example
+#  - story: add example for incorrect intent
+#    steps:
+#      - intent: incorrect_answer
+#      - action: utter_incorrect_answer
+#      - intent: correct_answer_number
+#      - action: action_add_example
 
 #  - story: Answer to appeal_result
 #    steps:

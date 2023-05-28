@@ -1,6 +1,16 @@
 version: "3.1"
 
 rules:
+  - rule: proc incorrect answer
+    steps:
+      - intent: incorrect_answer
+      - action: utter_incorrect_answer
+
+  - rule: add correct example
+    steps:
+      - intent: correct_answer_number
+      - action: action_add_example
+
   - rule: start dialogue
     steps:
       - intent: start_bot
