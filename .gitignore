@@ -4,4 +4,4 @@ models/*
 .rasa/*
 .keras/*
 .config/*
-
+endpoints.yml

@@ -8,6 +8,13 @@ stories:
       - action: utter_cancel_pre_registration
       - action: utter_pre_registration
 
+  - story: add example for incorrect intent
+    steps:
+      - intent: incorrect_answer
+      - action: utter_incorrect_answer
+      - intent: correct_answer_number
+      - action: action_add_example
+
 #  - story: Answer to appeal_result
 #    steps:
 #      - intent: appeal_result
@@ -25,14 +32,14 @@ stories:
 #      - action: action_get_confidence
 #      - action: utter_preferential_categories
 
-#  - story: Call employee to home, ask for prefentials
+#  - story: Call employee to home, ask for preferentials
 #    steps:
 #      - intent: call_employees_to_home
 #      - action: action_get_confidence
 #      - action: utter_call_employees_to_home
 #      - intent: preferential_categories
 #      - action: action_get_confidence
-#      - action: utter_prefential_categories_calling_employee_home
+#      - action: utter_preferential_categories_calling_employee_home
 
 #  - story: Answer to cancel_pre_registration
 #    steps:
@@ -99,10 +106,10 @@ stories:
 #      - intent: pre_registration_number
 #      - action: utter_pre_registration_number
 #
-#  - story: Answer to prefential_categories_calling_employee_home
+#  - story: Answer to preferential_categories_calling_employee_home
 #    steps:
-#      - intent: prefential_categories_calling_employee_home
-#      - action: utter_prefential_categories_calling_employee_home
+#      - intent: preferential_categories_calling_employee_home
+#      - action: utter_preferential_categories_calling_employee_home
 #
 #  - story: Answer to preferential_categories
 #    steps:

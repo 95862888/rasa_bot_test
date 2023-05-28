@@ -110,11 +110,11 @@ rules:
       - action: action_get_confidence
       - action: utter_pre_registration_number
 
-  - rule: Answer to prefential_categories_calling_employee_home
+  - rule: Answer to preferential_categories_calling_employee_home
     steps:
-      - intent: prefential_categories_calling_employee_home
+      - intent: preferential_categories_calling_employee_home
       - action: action_get_confidence
-      - action: utter_prefential_categories_calling_employee_home
+      - action: utter_preferential_categories_calling_employee_home
 
   - rule: Answer to preferential_categories
     steps:

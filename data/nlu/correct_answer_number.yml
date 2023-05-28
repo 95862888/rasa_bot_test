@@ -1,0 +1,11 @@
+version: '3.1'
+nlu:
+  - intent: correct_answer_number
+    examples: |-
+      - [1](answer_number)
+      - [2](answer_number)
+      - [10](answer_number)
+      - [11](answer_number)
+      - [20](answer_number)
+      - [21](answer_number)
+      - [30](answer_number)
